@@ -6,13 +6,9 @@ services:
       POSTGRES_DB: nest
       POSTGRES_USER: postgres 
       POSTGRES_PASSWORD: password
-    volumes:
-      - data:/var/lib/postgresql/data
     ports:
       - 5434:5432
     networks:
       - freecodecamp
-volumes:
-  data:
 networks:
   freecodecamp:   
